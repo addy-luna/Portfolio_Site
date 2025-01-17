@@ -1,0 +1,154 @@
+
+.page {
+    display: block;
+    min-width: 800px;
+    font-size: 16px;
+    font-family: "Hubot Sans", serif;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  .header {
+    height: 50px;
+    padding-top: 20px;
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    float: right;
+    padding-right: 15px;
+    background-color: #fff;
+  }
+
+  .nav__links {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 5px;
+    column-gap: 20px;
+    list-style: none;
+    padding: 0;
+
+  }
+  
+  .nav__link {
+    color: #000000;
+    text-decoration: none;    
+  }
+  
+  .nav__link:hover {
+    color: #ffb4d7;
+    opacity: 1;
+  }
+
+.intro {
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  background-color:#ffffff;
+}
+
+  .intro__title-img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    height: 310px;
+    border-radius: 5px 5px 5px 5px;
+    padding-left: 25px;
+  }
+
+
+.intro__description {
+  display: inline-block;
+  vertical-align: middle;
+    font-size: 25px;
+    padding-top: 70px;
+    /*margin-top: 92px;
+    margin-bottom: 0;*/
+}
+
+.intro__buttons {
+  
+}
+
+  .intro__title-grid {
+    /* justify-self: center; */
+    align-items: center;
+    padding-left: 80px;
+    flex-wrap: wrap;
+  }
+
+
+  /*.header__footer {
+    left: 0;
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 40px 80px 0;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+*/
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10%;
+  color: #000000;
+}
+
+
+.projects {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 3%;
+  background-color: #ffffff;
+  flex-direction: row;
+  align-content: stretch;
+  align-items: center;
+}
+
+.project-card {
+  background-color: #fff;
+  width: 350px;
+  height: 400px;
+  border-radius: 25px;
+  justify-self: center;
+  margin-top: 5%;
+  padding: 5%;
+}
+
+.project-card_heading {
+  position:absolute;
+  align-items:center ;
+}
+
+.project-card_img {
+  display: grid;
+  place-items: center;
+  width: 370px; /* or any width */
+  height: 200px; /* or any height */
+  
+ 
+}
+
+.project-card_description {
+  padding-top: 5px;
+}
+
+.code-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  
+}
+
