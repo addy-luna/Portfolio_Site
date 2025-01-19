@@ -41,22 +41,23 @@
                   <div class="intro__title-grid">
                     <div class="intro__description">
                       <p>
-                        <strong>Hey there, I’m Adela – Web Wizard Extraordinaire!</strong>
+                        Hey there, I’m Adela – <em>Web Wizard Extraordinaire!</em>
                     </p>  
                     <p>
-                      I turn code into captivating web experiences with a sprinkle of creativity and a dash of precision. Whether it’s crafting magic at SoFi or building cool digital vibes with HTML, CSS, and React, I love bringing ideas to life online. Let’s make the internet a little more awesome—together!
+                      I turn code into <strong>captivating</strong> web experiences with a sprinkle of creativity and a dash of precision. Whether it’s crafting magic at SoFi or building cool digital vibes with HTML, CSS, and React, I love bringing ideas to life online. Let’s make the internet a little more awesome—together!
                     </p>
                     </div>
                     <img class="intro__title-img" src="../images/profile.jpg" alt="Adela's profile image">
                   </div>
                   <div class="intro__buttons">
-                    <button class="button"><strong><a href="https://www.linkedin.com/in/adela-tatum/" target="_blank">View LinkedIn</a></strong></button>
-                    <button class="button"><strong><a href="https://github.com/addy-luna" target="_blank">View GitHub</a></strong></button>
+                    <button class="button"><a href="https://www.linkedin.com/in/adela-tatum/" target="_blank">View LinkedIn</a></button>
+                    <button class="button"><a href="https://github.com/addy-luna" target="_blank">View GitHub</a></button>
                   </div>
                 </section>
                 <section class="projects" id="projects">
                     <div>
-                      
+                      <h2>Projects</h2>
+                      <p>Some of the side projects I am working on:</p>
                     </div>
                 <section class="about" id="about">
                     
@@ -65,7 +66,22 @@
             <footer class="footer">
 
             </footer>
-    
+            <script type="module">
+              import { annotate, annotationGroup } from 'https://unpkg.com/rough-notation?module';
+              
+              const n1 = document.querySelector('em');
+              const n2 = document.querySelector('');
+              const n3 = document.querySelector('strong');
+              
+              const a1 = annotate(n1, { type: 'underline', color: '#FFEBEE' });
+              const a2 = annotate(n2, { type: 'circle', color: '#F3E5F5', padding: 5 });
+              const a3 = annotate(n3, { type: 'highlight', color: '#FFFDE7' });
+              
+              const ag = annotationGroup([a1, a2, a3]);
+              ag.show();
+              </script>
         </body>
-    </div>
+      </div>
+
+    
 </html>
